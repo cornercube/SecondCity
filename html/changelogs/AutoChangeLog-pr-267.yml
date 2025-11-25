@@ -1,7 +1,0 @@
-author: "FalloutFalcon"
-delete-after: True
-changes:
-  - rscadd: "city gangrel"
-  - rscadd: "reimplements protean"
-  - rscadd: "readds beast marks selection conveted to tgui pref"
-  - balance: "tunes back gangrel form health and damage"
