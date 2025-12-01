@@ -1,5 +1,5 @@
 /obj/effect/decal/cleanable/ants
-	name = "space ants"
+	name = "ants"
 	desc = "A small colony of ants. Do not let them in your pants." // DARKPACK EDIT CHANGE
 	icon = 'icons/obj/debris.dmi'
 	icon_state = "ants"
