@@ -1,6 +1,6 @@
 /obj/effect/decal/cleanable/ants
 	name = "space ants"
-	desc = "A small colony of space ants. They're normally used to the vacuum of space, so they can't climb too well."
+	desc = "A small colony of ants. Do not let them in your pants."
 	icon = 'icons/obj/debris.dmi'
 	icon_state = "ants"
 	beauty = -150
