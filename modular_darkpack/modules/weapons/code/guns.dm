@@ -39,6 +39,7 @@
 /obj/item/gun/ballistic/revolver/darkpack/magnum
 	name = "magnum revolver"
 	desc = "Feelin' lucky, punk?"
+	projectile_damage_multiplier = 1.2 //42 damage, same TTK as deagle against unarmored targets, but matters more against enemies with armor like other vampires
 
 /obj/item/gun/ballistic/revolver/darkpack/snub
 	name = "snub-nosed revolver"
@@ -49,7 +50,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	initial_caliber = CALIBER_9MM
 	fire_sound_volume = 65
-	projectile_damage_multiplier = 1.2 //21.6 damage, slightly higher than the m1911, just so it is possible to kill NPCs within 6 bullets
+	projectile_damage_multiplier = 1.2 //21.6 damage, same multiplier as the magnum revolver, slightly higher than the m1911, just so it is possible to kill NPCs within 6 bullets
 
 /obj/item/ammo_box/magazine/internal/cylinder/rev9mm
 	name = "revolver cylinder"
@@ -472,6 +473,15 @@
 	recoil = 4
 	inhand_x_dimension = 32
 	inhand_y_dimension = 32
+
+/obj/item/gun/ballistic/revolver/darkpack/doubleshot
+	name = "double barreled shotgun"
+	desc = "A double barrled shotgun for hunting bunny rabbits."
+	icon = 'modular_darkpack/modules/deprecated/icons/48x32.dmi'
+	lefthand_file = 'modular_darkpack/modules/deprecated/icons/lefthand.dmi'
+	righthand_file = 'modular_darkpack/modules/deprecated/icons/righthand.dmi'
+	worn_icon = 'modular_darkpack/modules/weapons/icons/worn_guns.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/weapons/icons/weapons_onfloor.dmi')
 
 /obj/item/ammo_box/magazine/darkpackautoshot
 	name = "shotgun magazine (12ga)"
