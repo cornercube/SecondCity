@@ -453,7 +453,7 @@
 	max_ammo = 6
 	masquerade_violating = FALSE
 
-/obj/item/gun/ballistic/shotgun/vampire
+/obj/item/gun/ballistic/shotgun/darkpack
 	name = "shotgun"
 	desc = "A traditional shotgun with wood furniture and a six-round tube magazine."
 	icon = 'modular_darkpack/modules/deprecated/icons/48x32.dmi'
@@ -473,15 +473,36 @@
 	recoil = 4
 	inhand_x_dimension = 32
 	inhand_y_dimension = 32
+	masquerade_violating = FALSE
 
-/obj/item/gun/ballistic/revolver/darkpack/doubleshot
+/obj/item/ammo_box/magazine/internal/vampdoubleshot
+	name = "double barrel internal magazine"
+	ammo_type = /obj/item/ammo_casing/vampire/c12g/buck
+	caliber = CALIBER_SHOTGUN
+	max_ammo = 2
+
+/obj/item/gun/ballistic/revolver/darkpack/doublebarrel
 	name = "double barreled shotgun"
 	desc = "A double barrled shotgun for hunting bunny rabbits."
 	icon = 'modular_darkpack/modules/deprecated/icons/48x32.dmi'
 	lefthand_file = 'modular_darkpack/modules/deprecated/icons/lefthand.dmi'
 	righthand_file = 'modular_darkpack/modules/deprecated/icons/righthand.dmi'
-	worn_icon = 'modular_darkpack/modules/weapons/icons/worn_guns.dmi'
 	ONFLOOR_ICON_HELPER('modular_darkpack/modules/weapons/icons/weapons_onfloor.dmi')
+	icon_state = "doublebarrel"
+	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/vampdoubleshot
+	recoil = 2 //halved
+	fire_delay = 2 //fire twice in quick succession
+	masquerade_violating = FALSE
+
+/obj/item/gun/ballistic/revolver/darkpack/doublebarrel/sawedoff
+	name = "sawed-off shotgun"
+	desc = "The stock and barrel of this shotgun have been illegally shortened."
+	icon_state = "doublebarrel"
+	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/vampdoubleshot
+	recoil = 10 //a lot
+	burst_size = 2 //both barrels only, DOOM super shottie reference
+	masquerade_violating = TRUE
+	pb_knockback = 4 //in your face
 
 /obj/item/ammo_box/magazine/darkpackautoshot
 	name = "shotgun magazine (12ga)"

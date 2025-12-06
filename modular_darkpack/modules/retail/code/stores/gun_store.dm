@@ -11,7 +11,7 @@
 		new /datum/data/vending_product("9mm ammo", /obj/item/ammo_box/darkpack/c9mm,	600),
 		new /datum/data/vending_product(".44 ammo", /obj/item/ammo_box/darkpack/c44,	800),
 		new /datum/data/vending_product("5.56 ammo", /obj/item/ammo_box/darkpack/c556,	2000),
-		new /datum/data/vending_product("shotgun", /obj/item/gun/ballistic/shotgun/vampire, 900),
+		new /datum/data/vending_product("shotgun", /obj/item/gun/ballistic/shotgun/darkpack, 900),
 		new /datum/data/vending_product("12ga shotgun shells, buckshot", /obj/item/ammo_box/darkpack/c12g/buck,	400),
 		new /datum/data/vending_product("desert eagle magazine", /obj/item/ammo_box/magazine/m44,	100),
 		new /datum/data/vending_product("hunting rifle magazine, 5.56", /obj/item/ammo_box/magazine/darkpack556/hunt,	200),

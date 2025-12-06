@@ -29,7 +29,7 @@
 
 	var/is_guarding = TRUE
 
-	my_weapon_type = /obj/item/gun/ballistic/shotgun/vampire
+	my_weapon_type = /obj/item/gun/ballistic/shotgun/darkpack
 	my_backup_weapon_type = /obj/item/melee/baton/vamp
 
 	//Behavior settings

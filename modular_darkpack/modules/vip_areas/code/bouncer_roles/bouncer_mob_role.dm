@@ -173,5 +173,5 @@
 		"Nice story, bucko. Now scram."
 	)
 
-	var/bouncer_weapon_type = /obj/item/gun/ballistic/shotgun/vampire
+	var/bouncer_weapon_type = /obj/item/gun/ballistic/shotgun/darkpack
 	var/bouncer_backup_weapon_type = /obj/item/claymore/machete
