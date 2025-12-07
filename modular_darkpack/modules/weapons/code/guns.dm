@@ -247,7 +247,7 @@
 
 /obj/item/gun/ballistic/automatic/darkpack/mp5
 	name = "\improper HK MP5"
-	desc = "A lightweight, burst-fire submachine gun, for when you really want to do some dirty cool job. Uses 9mm rounds."
+	desc = "A lightweight submachine gun, for when you really want to do some dirty cool job. Uses 9mm rounds."
 	icon_state = "mp5"
 	icon = 'modular_darkpack/modules/deprecated/icons/48x32.dmi'
 	ONFLOOR_ICON_HELPER('modular_darkpack/modules/weapons/icons/weapons_onfloor.dmi')
@@ -289,6 +289,54 @@
 	mag_display = TRUE
 	rack_sound = 'sound/items/weapons/gun/pistol/slide_lock.ogg'
 	fire_sound = 'modular_darkpack/modules/deprecated/sounds/uzi.ogg'
+
+/obj/item/ammo_box/magazine/darkpack45smg
+	name = ".45 SMG magazine"
+	icon = 'modular_darkpack/modules/weapons/icons/ammo.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/weapons/icons/ammo_onfloor.dmi')
+	icon_state = "mac10" //placeholder
+	ammo_type = /obj/item/ammo_casing/vampire/c45acp
+	caliber = CALIBER_45
+	max_ammo = 30
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
+
+/obj/item/ammo_box/magazine/darkpack46pdw
+	name = "4.6mm MP7 magazine"
+	icon = 'modular_darkpack/modules/weapons/icons/ammo.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/weapons/icons/ammo_onfloor.dmi')
+	icon_state = "mp7"
+	ammo_type = /obj/item/ammo_casing/vampire/c46pdw
+	caliber = CALIBER_46
+	max_ammo = 20
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
+
+/obj/item/ammo_box/magazine/darkpack46pdw/ext
+	name = "4.6mm MP7 extended magazine"
+	icon = 'modular_darkpack/modules/weapons/icons/ammo.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/weapons/icons/ammo_onfloor.dmi')
+	icon_state = "mp7"
+	ammo_type = /obj/item/ammo_casing/vampire/c46pdw
+	caliber = CALIBER_46
+	max_ammo = 40
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
+
+/obj/item/gun/ballistic/automatic/darkpack/mp7
+	name = "\improper HK MP7"
+	desc = "A Machine Pistol recently adopted by the German Military. Comes loaded with armor-piercing rounds, use responsibly."
+	icon = 'modular_darkpack/modules/deprecated/icons/48x32.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/weapons/icons/weapons_onfloor.dmi')
+
+	icon_state = "mp7"
+	inhand_icon_state = "mp7"
+	accepted_magazine_type = /obj/item/ammo_box/magazine/darkpack46pdw
+	burst_size = 3
+	spread = 3 //spray and pray
+	recoil = 2
+	bolt_type = BOLT_TYPE_LOCKING
+	show_bolt_icon = FALSE
+	mag_display = TRUE
+	rack_sound = 'sound/items/weapons/gun/pistol/slide_lock.ogg'
+	fire_sound = 'modular_darkpack/modules/deprecated/sounds/mp5.ogg'
 
 /obj/item/ammo_box/magazine/darkpack556
 	name = "carbine magazine (5.56mm)"
