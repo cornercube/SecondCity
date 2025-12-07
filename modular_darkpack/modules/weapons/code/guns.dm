@@ -265,7 +265,7 @@
 	name = ".45 SMG magazine"
 	icon = 'modular_darkpack/modules/weapons/icons/ammo.dmi'
 	ONFLOOR_ICON_HELPER('modular_darkpack/modules/weapons/icons/ammo_onfloor.dmi')
-	icon_state = "mac10" //placeholder
+	icon_state = "mac10" //uzi sprite placeholder
 	ammo_type = /obj/item/ammo_casing/vampire/c45acp
 	caliber = CALIBER_45
 	max_ammo = 30
@@ -521,7 +521,7 @@
 	actions_types = list()
 	masquerade_violating = TRUE
 
-/obj/item/gun/ballistic/automatic/darkpack/autosniper
+/obj/item/gun/ballistic/automatic/darkpack/autosniper //just a test, do not spawn
 	name = "auto-sniper rifle"
 	desc = "A semi-automatic marksman rifle. This particular model is very popular in video games as of late."
 	icon = 'modular_darkpack/modules/deprecated/icons/48x32.dmi'
@@ -530,7 +530,7 @@
 	inhand_icon_state = "psg1"
 	worn_icon_state = "sniper"
 	w_class = WEIGHT_CLASS_BULKY
-	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/vampire/sniper
+	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/vampire/sniper //placeholder
 	bolt_wording = "bolt"
 	bolt_type = BOLT_TYPE_LOCKING
 	semi_auto = TRUE
