@@ -265,7 +265,7 @@
 	name = ".45 SMG magazine"
 	icon = 'modular_darkpack/modules/weapons/icons/ammo.dmi'
 	ONFLOOR_ICON_HELPER('modular_darkpack/modules/weapons/icons/ammo_onfloor.dmi')
-	icon_state = "uzi"
+	icon_state = "mac10" //placeholder
 	ammo_type = /obj/item/ammo_casing/vampire/c45acp
 	caliber = CALIBER_45
 	max_ammo = 30
