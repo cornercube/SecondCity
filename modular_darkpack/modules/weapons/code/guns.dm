@@ -499,7 +499,7 @@
 	spread = 2
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_BACK
-	projectile_damage_multiplier = 2 //140 damage. Nice.
+	projectile_damage_multiplier = 1.5
 	actions_types = list()
 	masquerade_violating = TRUE
 
