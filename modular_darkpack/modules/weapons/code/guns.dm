@@ -537,6 +537,7 @@
 	actions_types = list()
 	masquerade_violating = TRUE
 
+
 /obj/item/gun/ballistic/automatic/darkpack/autosniper //just a test, do not spawn
 	name = "auto-sniper rifle"
 	desc = "A semi-automatic marksman rifle. This particular model is very popular in video games as of late."
@@ -546,7 +547,7 @@
 	inhand_icon_state = "psg1"
 	worn_icon_state = "sniper"
 	w_class = WEIGHT_CLASS_BULKY
-	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/vampire/sniper //placeholder
+	accepted_magazine_type = /obj/item/ammo_box/magazine/darkpack556 //placeholder
 	bolt_wording = "bolt"
 	bolt_type = BOLT_TYPE_LOCKING
 	semi_auto = TRUE
