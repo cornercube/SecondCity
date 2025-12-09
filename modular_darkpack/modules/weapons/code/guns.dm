@@ -271,16 +271,6 @@
 	max_ammo = 30
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
 
-/obj/item/ammo_box/magazine/darkpack45custom
-	name = ".45 custom magazine"
-	icon = 'modular_darkpack/modules/weapons/icons/ammo.dmi'
-	ONFLOOR_ICON_HELPER('modular_darkpack/modules/weapons/icons/ammo_onfloor.dmi')
-	icon_state = "mac10" //uzi sprite placeholder
-	ammo_type = /obj/item/ammo_casing/vampire/c45acp
-	caliber = CALIBER_45
-	max_ammo = 50
-	multiple_sprites = AMMO_BOX_FULL_EMPTY
-
 /obj/item/gun/ballistic/automatic/darkpack/mac10
 	name = "\improper Braddock .45"
 	desc = "A box filled with bullets. The high cyclic rate and low weight means it's only good for spraying and then praying. Uses .45 caliber rounds."
@@ -302,16 +292,27 @@
 	fire_sound = 'modular_darkpack/modules/weapons/sounds/mac10.ogg' //TFN sound effect
 
 
+/obj/item/ammo_box/magazine/darkpack45custom
+	name = ".45 custom magazine"
+	icon = 'modular_darkpack/modules/weapons/icons/ammo.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/weapons/icons/ammo_onfloor.dmi')
+	icon_state = "mac10" //uzi sprite placeholder
+	ammo_type = /obj/item/ammo_casing/vampire/c45acp
+	caliber = CALIBER_45
+	max_ammo = 50
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
+
 /obj/item/gun/ballistic/automatic/darkpack/mac10/super
 	name = "\improper Cleaner Custom"
 	desc = "A .45 submachine gun with a suppressor installed on the tip, which helps balance it out when firing. Dark Blood magic has enabled the wire stock to be used"
 	icon = 'modular_darkpack/modules/deprecated/icons/64x32.dmi'
+	ONFLOOR_ICON_HELPER('modular_darkpack/modules/weapons/icons/weapons_onfloor.dmi')
 	icon_state = "mac10_super"
 	recoil = 4
 	spread = 8 //magic stock
 	suppressed = SUPPRESSED_QUIET
-	fire_sound = 'modular_darkpack/modules/weapons/sounds/tmpschmidt.ogg'  //counter strike source sound effect, its actually the TMP
-	suppressed_sound = 'modular_darkpack/modules/weapons/sounds/tmpschmidt.ogg'
+	fire_sound = 'modular_darkpack/modules/weapons/sounds/mac10suppress.ogg'  //from tSony Pictures Sound Effects Library Volumes 6-10, should be free to use
+	suppressed_sound = 'modular_darkpack/modules/weapons/sounds/mac10suppress.ogg'
 	suppressed_volume = 70
 	accepted_magazine_type = /obj/item/ammo_box/magazine/darkpack45custom
 	can_unsuppress = FALSE
@@ -451,7 +452,7 @@
 
 /obj/item/gun/ballistic/automatic/darkpack/aug
 	name = "\improper Steyr AUG-77"
-	desc = "A three-round burst 5.56 bullpup design, designated 'Steyr AUG-77'."
+	desc = "An Austrian 5.56 bullpup design, designated 'Steyr AUG-77'."
 	icon = 'modular_darkpack/modules/deprecated/icons/48x32.dmi'
 	ONFLOOR_ICON_HELPER('modular_darkpack/modules/weapons/icons/weapons_onfloor.dmi')
 	icon_state = "aug"
