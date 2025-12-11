@@ -311,7 +311,7 @@
 	recoil = 4
 	spread = 8 //magic stock
 	suppressed = SUPPRESSED_QUIET
-	fire_sound = 'modular_darkpack/modules/weapons/sounds/mac10suppress.ogg'  //from tSony Pictures Sound Effects Library Volumes 6-10, should be free to use
+	fire_sound = 'modular_darkpack/modules/weapons/sounds/mac10suppress.ogg'  //mac-10 recording
 	suppressed_sound = 'modular_darkpack/modules/weapons/sounds/mac10suppress.ogg'
 	suppressed_volume = 70
 	accepted_magazine_type = /obj/item/ammo_box/magazine/darkpack45custom
